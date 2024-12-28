@@ -13,20 +13,93 @@
     <title>css</title>
 </head>
 <body>
-    <div class="bg-purple-500 flex justify-content-center">
-        <p>Hellooooo</p>
+    <div>
+        <div class="flex justify-content-center bg-pal-1">
+            <h1>My Website</h1>
+        </div>
+        <div class="flex justify-content-center p-l-2-em p-r-2-em bg-pal-3 media-main-col-container">
+            <div class="w-100 flex justify-content-left">
+                <a href="">test1</a>
+                <a href="">test1</a>
+                <a href="">test1</a>
+            </div>
+            <div class="w-100 flex justify-content-center bg-pal-4">
+                <h2>You Are At The Right Place</h2>
+            </div>
+            <div class="w-100 flex justify-content-right">
+                <a href="">test1</a>
+                <a href="">test1</a>
+                <a href="">test1</a>
+            </div>
+        </div>
     </div>
-    <div class="bg-blue-100">
-        <p>Hellooooo</p>
+    <div class="bg-pal-4 border-dashed border-pal-5-alt">
+        <div class="flex justify-content-center">
+            <div class="bg-red-100" id="example-cont">
+                <h1>Slide</h1>
+            </div>
+        </div>
+        <div class="flex justify-content-center">
+            <div>
+                <input type="range" min="1" max="50" value="25" id="slider" >
+            </div>
+        </div>
     </div>
-    <div class="bg-green-100">
-        <p>Hellooooo</p>
-    </div>
-    <div class="bg-purple-100">
-        <p>Hellooooo</p>
-    </div>
-    <div class="bg-yellow-100 border-black border-5px border-dashed flex justify-content-center">
-        <p>Hellooooo</p>
-    </div>
+    <section>
+
+        <div class="AppendToTable">
+            <div class="inputs">
+                <input type="text" placeholder="1" id="txt1">
+                <input type="text" placeholder="2" id="txt2">
+                <input type="text" placeholder="3" id="txt3">
+                <input type="text" placeholder="4" id="txt4">
+                <input type="text" placeholder="5" id="txt5">
+                <input type="text" placeholder="6" id="txt6">
+                <input type="text" placeholder="7" id="txt7">
+            </div>
+            <div class="buttons">
+                <button id="append" onclick="Append()">Append Row</button>
+                <button id="clear" onclick="Clear()">Clear Boxes</button>
+            </div>
+        </div>
+
+        <div class="schedule" id="expand">
+            <table class="weekTable">
+                <tr id="ScheduleTitle">
+                    <th colspan="7">Weekly Schedule</th>
+                </tr>
+                    <tr>
+                        <th id="monday">Monday      </th>
+                        <th id="tuesday">Tuesday    </th>
+                        <th id="wednesday">Wednesday</th>
+                        <th id="thursday">Thursday  </th>
+                        <th id="friday">Friday      </th>
+                        <th id="saturday">Saturday  </th>
+                        <th id="sunday">Sunday      </th>
+                    </tr>
+                <tr>
+                    <td>Fortnite Oyna</td>
+                    <td id="alert">Odev </td>
+                    <td id="empty">empt</td>
+                    <td>die</td>
+                    <td>aint nobody</td>
+                    <td>prayin'</td>
+                    <td>for me</td>
+                </tr>
+                <tr>
+                    <td>homework</td>
+                    <td>meet with frends</td>
+                    <td>give homie goodnight kiss</td>
+                    <td>die</td>
+                    <td>History class project</td>
+                    <td id="alert">Study exams</td>
+                    <td id="empty">empt</td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+    
+    <Script src="./src/js/page.js"></Script>
 </body>
 </html>

@@ -1,4 +1,106 @@
 /* Custom Css Here */
-.test{
-    border: 10px black dashed;
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.4em;
+}
+a:hover{
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .media-main-col-container{
+        flex-direction: column;
+    }
+    .media-main-col-container div{
+        justify-content: center;
+    }
+}
+
+
+/* COLORS
+    22223B 4A4E69 9A8C98 C9ADA7 F2E9E4
+    ALERT: e63946
+*/
+
+/* TABLE SCHOOL WORK */
+.schedule{
+    display: flex;
+    justify-content: center;
+}
+.schedule table{
+    background-color: #F2E9E4;
+    border-radius: 10px;
+    border-collapse: collapse;
+}
+.schedule th, td{
+    border-collapse: collapse;
+    height: 1.2em;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: sans-serif;
+    text-align: left;                                                                                                       
+}
+#ScheduleTitle{
+    font-size: 2em;
+}
+#alert{
+    background-color:  #e63946;
+    border-radius: 0.5em;
+}
+#empty{
+    font-style: italic;
+    font-size: 0.9em;
+}
+.weekTable td:hover{
+    outline: 1px solid black;
+    border-radius: 10px;
+}
+
+/* TABLE APPENDING */
+.appendTable{
+    position: absolute;
+    top: 90%;
+}
+.AppendToTable{
+    text-align: center;
+}
+.inputs input{
+    background-color: #F2E9E4;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.1em;
+    width: 10em;
+    margin: 0.3rem;
+    margin-top: 2em;
+}
+.buttons button{
+    border: none;
+    font-size: 1.2em;
+    padding: 0.9rem;
+    border-radius: 0.2rem;
+    margin: 0.5rem;
+}   
+#append{
+    background-color: aquamarine;
+}
+#clear{
+    background-color: #e63946;
+}
+
+#append:hover{
+    background-color: rgb(177, 252, 227);
+    color: #F2E9E4;
+}
+#clear:hover{
+    background-color: #e65e69;
+    color: #F2E9E4;
+}
+
+#append:active{
+    background-color: aquamarine;
+}
+#clear:active{
+    background-color: #e63946;
 }
