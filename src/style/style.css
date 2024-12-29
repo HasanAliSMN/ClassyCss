@@ -1,106 +1,29 @@
-/* Custom Css Here */
-a{
-    text-decoration: none;
-    color: black;
-    font-size: 1.4em;
+.content-bar-element{
+    font-size: 1.3em;
 }
-a:hover{
-    color: white;
+.title{
+    font-size: 3em;
 }
-
-@media only screen and (max-width: 600px) {
-    .media-main-col-container{
+.title-hover-anim:hover{
+    animation-iteration-count: infinite;
+    animation-name: color;
+    animation-duration: 1s;
+}
+@keyframes color{
+    25%     {color: var(--red-100);}
+    50%     {color: var(--green-100);}
+    75%     {color: var(--blue-100);}
+    100%     {color: black;}
+}
+@media only screen and (max-width: 850px) {
+    .media-rule-content-bar{
         flex-direction: column;
+        background-color: black;
     }
-    .media-main-col-container div{
-        justify-content: center;
+    .media-rule-content-bar a{
+        color: white;
     }
-}
-
-
-/* COLORS
-    22223B 4A4E69 9A8C98 C9ADA7 F2E9E4
-    ALERT: e63946
-*/
-
-/* TABLE SCHOOL WORK */
-.schedule{
-    display: flex;
-    justify-content: center;
-}
-.schedule table{
-    background-color: #F2E9E4;
-    border-radius: 10px;
-    border-collapse: collapse;
-}
-.schedule th, td{
-    border-collapse: collapse;
-    height: 1.2em;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: sans-serif;
-    text-align: left;                                                                                                       
-}
-#ScheduleTitle{
-    font-size: 2em;
-}
-#alert{
-    background-color:  #e63946;
-    border-radius: 0.5em;
-}
-#empty{
-    font-style: italic;
-    font-size: 0.9em;
-}
-.weekTable td:hover{
-    outline: 1px solid black;
-    border-radius: 10px;
-}
-
-/* TABLE APPENDING */
-.appendTable{
-    position: absolute;
-    top: 90%;
-}
-.AppendToTable{
-    text-align: center;
-}
-.inputs input{
-    background-color: #F2E9E4;
-    border: none;
-    border-radius: 3px;
-    font-size: 1.1em;
-    width: 10em;
-    margin: 0.3rem;
-    margin-top: 2em;
-}
-.buttons button{
-    border: none;
-    font-size: 1.2em;
-    padding: 0.9rem;
-    border-radius: 0.2rem;
-    margin: 0.5rem;
-}   
-#append{
-    background-color: aquamarine;
-}
-#clear{
-    background-color: #e63946;
-}
-
-#append:hover{
-    background-color: rgb(177, 252, 227);
-    color: #F2E9E4;
-}
-#clear:hover{
-    background-color: #e65e69;
-    color: #F2E9E4;
-}
-
-#append:active{
-    background-color: aquamarine;
-}
-#clear:active{
-    background-color: #e63946;
+    .show-on-media-rule{
+        display: block;
+    }
 }

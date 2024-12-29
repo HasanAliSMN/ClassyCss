@@ -17,5 +17,5 @@ while True:
 
     for classValues in classNames :
         val = classValues.split(":").pop(0)
-        print(f".bg{val[1:]}" + "{" + f"background-color: var({val});" +"}")
+        print(f".col{val[1:]}" + "{" + f"color: var({val});" +"}")
 
